@@ -57,7 +57,7 @@ init_db()
 # ---------------- SMART SEARCH ----------------
 
 def smart_match(query, items):
-query = query.lower()
+    query = query.lower()
 result = []
 
 ```
@@ -146,7 +146,7 @@ button{
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-message = ""
+    message = ""
 
 ```
 if request.method == "POST":
@@ -232,7 +232,7 @@ button{
 
 @app.route("/")
 def home():
-if "user" not in session:
+    if "user" not in session:
 return redirect(url_for("login"))
 
 ```
