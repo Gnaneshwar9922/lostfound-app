@@ -15,7 +15,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # ---------------- DATABASE ----------------
 
 def init_db():
-conn = sqlite3.connect("lostfound.db")
+    conn = sqlite3.connect("lostfound.db")
 c = conn.cursor()
 
 ```
