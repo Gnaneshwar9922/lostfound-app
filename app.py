@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 import os
 
-app = Flask(**name**)
+app = Flask(__name__)
 app.secret_key = "lostfound_secret_key"
 
 UPLOAD_FOLDER = "static/uploads"
